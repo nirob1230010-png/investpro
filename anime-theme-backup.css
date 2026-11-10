@@ -1,0 +1,209 @@
+
+/* INVESTPRO — MIDNIGHT BLACK / ROYAL GOLD ANIME THEME
+   Visual-only overrides. Existing application logic and localStorage keys are untouched. */
+:root{
+  --navy:#070707 !important; --navy-2:#101010 !important; --navy-light:#1a1710 !important;
+  --gold:#c99b35 !important; --gold-light:#f4d889 !important; --gold-deep:#8b641c !important;
+  --bg:#090909 !important; --text:#f4f0e7 !important; --muted:#b3a98f !important;
+  --border:rgba(213,171,76,.22) !important;
+  --success:#5da879 !important; --danger:#cf5960 !important;
+  --shadow-sm:0 5px 18px rgba(0,0,0,.28) !important;
+  --shadow-md:0 12px 30px rgba(0,0,0,.38) !important;
+  --shadow-lg:0 22px 48px rgba(0,0,0,.52) !important;
+}
+html{background:#080808!important;color-scheme:dark}
+body{
+  background:
+    radial-gradient(ellipse at 85% 0%,rgba(178,130,37,.10),transparent 36%),
+    radial-gradient(ellipse at 0% 48%,rgba(114,77,21,.07),transparent 34%),
+    #080808!important;
+  color:#f4f0e7!important;
+}
+a{color:var(--gold-light)}
+/* User dashboard */
+.app-container{background:transparent!important}
+.app-header{
+  background:
+    radial-gradient(ellipse at 82% 10%,rgba(198,151,52,.20),transparent 42%),
+    linear-gradient(145deg,#050505 0%,#100e0a 62%,#17130b 100%)!important;
+  border:1px solid rgba(213,171,76,.24);border-top:0;
+  box-shadow:0 18px 38px rgba(0,0,0,.5)!important;
+}
+.app-header::before{
+  background:radial-gradient(circle,rgba(211,169,77,.18),transparent 70%)!important;
+}
+.app-header::after{
+  background:radial-gradient(circle,rgba(143,103,35,.13),transparent 70%)!important;
+}
+.user-info h1{background:linear-gradient(90deg,#fff8e8,#e7c36f)!important;-webkit-background-clip:text!important;background-clip:text!important}
+.balance-box{background:linear-gradient(145deg,rgba(255,255,255,.10),rgba(190,145,49,.06))!important;border-color:rgba(228,190,104,.3)!important}
+.tab-content{color:#f4f0e7!important}
+.stats-grid .stat-card,.premium-card,.plan-card-premium{
+  background:linear-gradient(145deg,#171512,#0d0d0c)!important;
+  color:#f4f0e7!important;border:1px solid rgba(208,165,71,.26)!important;
+  box-shadow:0 12px 28px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.035)!important;
+}
+.stat-label,.plan-return-label,.p-stat small{color:#b9ad91!important}
+.stat-value,.plans-header-text,.plan-title-box h4,.plan-return-amount,
+.p-stat strong,.history-item .h-type,.d-num-info h3{color:#f7f0df!important}
+.stat-card.earned .stat-value{color:#d6b45d!important}
+.plans-header-text{color:#f4e5bd!important}
+.plan-card-premium{position:relative;overflow:hidden}
+.plan-card-premium::before{background:radial-gradient(circle,rgba(202,155,53,.13),transparent 72%)!important}
+.plan-card-premium.popular{
+  background:radial-gradient(500px 260px at 100% 0%,rgba(199,153,56,.18),transparent 65%),linear-gradient(150deg,#17140e,#080808)!important;
+  border:1px solid rgba(226,185,91,.5)!important;
+  box-shadow:0 20px 40px rgba(0,0,0,.48)!important;animation:none!important;
+}
+.plan-card-premium.popular::after{background:linear-gradient(135deg,#f5d98f,transparent 42%,#a97922)!important}
+.plan-icon-box{background:linear-gradient(145deg,rgba(205,160,65,.18),rgba(205,160,65,.05))!important;border-color:rgba(220,180,91,.32)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.07)!important}
+.plan-title-box p,.popular .plan-title-box p{color:#b8ad96!important}
+.plan-return-amount{color:#f5e7c4!important}
+.plan-return-amount span,.popular .plan-return-amount span{color:#8fc79a!important;-webkit-text-fill-color:#8fc79a!important}
+.p-stat{background:rgba(255,255,255,.035)!important;border:1px solid rgba(214,174,91,.16)!important}
+.popular .p-stat{background:rgba(255,255,255,.045)!important;border-color:rgba(214,174,91,.2)!important}
+.plan-btn{background:linear-gradient(135deg,#8c641c,#d0a343 55%,#f0d486)!important;color:#171107!important;box-shadow:0 8px 18px rgba(0,0,0,.35)!important}
+.plan-btn::after,.btn-gold::after{opacity:.18!important;animation:none!important}
+.badge-popular{background:linear-gradient(135deg,#f5df9f,#bd8b2d)!important;color:#161006!important;box-shadow:none!important}
+.history-item{border-bottom-color:rgba(213,171,76,.15)!important}
+.h-type{color:#f4ecd8!important}.h-date{color:#a99e84!important}
+.deposit-num-card{background:linear-gradient(145deg,#1c1810,#0e0d0a)!important;border-color:rgba(211,170,80,.34)!important}
+.d-num-info h4{color:#b8a77f!important}
+.copy-btn{background:#1b1811!important;color:#f0d68e!important;border-color:rgba(213,171,76,.32)!important}
+.wallet-tabs{background:#11100d!important;border:1px solid rgba(213,171,76,.25)!important;box-shadow:var(--shadow-md)!important}
+.wallet-tabs button{color:#b4aa94!important}
+.wallet-tabs button.active{background:linear-gradient(135deg,#17130b,#2a2110)!important;color:#f3d88d!important;box-shadow:inset 0 0 0 1px rgba(220,179,89,.45)!important}
+.form-group label{color:#e8dcc0!important}
+.form-control{background:#141311!important;color:#f6efdf!important;border-color:rgba(212,172,83,.26)!important}
+.form-control::placeholder{color:#8f8778!important}
+.form-control:focus{background:#191712!important;border-color:#d5ad5b!important;box-shadow:0 0 0 3px rgba(197,151,57,.12)!important}
+.input-group i{color:#d2aa57!important}
+.btn-gold{background:linear-gradient(135deg,#946b20,#d2a541 52%,#f2d98f)!important;color:#171107!important;box-shadow:0 8px 20px rgba(0,0,0,.34)!important}
+.bottom-nav{
+  background:rgba(8,8,8,.96)!important;border:1px solid rgba(213,171,76,.32)!important;
+  box-shadow:0 16px 38px rgba(0,0,0,.62),inset 0 1px 0 rgba(255,255,255,.06)!important;
+}
+.nav-item{color:#9d9584!important}.nav-item.active{color:#f0d17c!important}
+.nav-item.active i{filter:none!important;text-shadow:0 2px 8px rgba(207,164,73,.28)!important}
+.nav-item.active::after{background:#d7b45e!important;box-shadow:none!important}
+.wheel-center{background:radial-gradient(circle at 30% 30%,#292113,#080808)!important}
+.spin-container{filter:drop-shadow(0 12px 18px rgba(0,0,0,.55))!important}
+.wheel-pointer{border-top-color:#c34a50!important}
+.toast{background:linear-gradient(135deg,#17130c,#080808)!important;box-shadow:0 12px 26px rgba(0,0,0,.55),0 0 0 1px rgba(213,171,76,.32)!important}
+/* Landing page */
+body.landing-page{background:#080808!important;color:#f5efdf!important}
+.landing-container{background:transparent!important}
+.landing-header .logo,.logo-area h2{color:#f7f0df!important}
+.hero-icon{background:linear-gradient(145deg,#241c0d,#0d0c09)!important;border-color:rgba(218,176,82,.36)!important;box-shadow:0 12px 26px rgba(0,0,0,.38)!important}
+.hero-section h1{color:#f8f0dc!important}
+.hero-section h1 span{color:#e6c36f!important}
+.hero-section p{color:#b8ad97!important}
+.feature-box{background:linear-gradient(145deg,#17140e,#0d0d0c)!important;border-color:rgba(213,171,76,.2)!important}
+.feature-box h4{color:#f4e9cf!important}.feature-box p{color:#a99f8c!important}
+.glow-circle{background:radial-gradient(circle,rgba(191,145,48,.10),transparent 70%)!important}
+.btn-outline{border-color:rgba(213,171,76,.38)!important;color:#e9d49c!important}
+/* Login / registration */
+body.auth-page{background:#080808!important}
+.auth-page .form-card,.admin-login .login-box{
+  background:linear-gradient(145deg,#191611,#0b0b0a)!important;
+  border:1px solid rgba(213,171,76,.32)!important;border-radius:24px!important;
+  box-shadow:0 20px 48px rgba(0,0,0,.55)!important;
+}
+.auth-page .logo-area h2,.admin-login .login-box h2{color:#f4e8c8!important}
+.auth-page .logo-area p,.admin-login .login-box p{color:#b4a98f!important}
+.auth-page .tab-switch{background:#0c0b09!important;border:1px solid rgba(213,171,76,.18)!important}
+.auth-page .tab-switch button{color:#b4a98f!important}
+.auth-page .tab-switch button.active{background:linear-gradient(135deg,#2a2110,#17130b)!important;color:#f1d68a!important;box-shadow:inset 0 0 0 1px rgba(213,171,76,.3)!important}
+.auth-page .form-group label,.admin-login .form-group label{color:#e9ddc1!important}
+.auth-page .form-control,.admin-login .form-control{background:#0e0e0d!important;color:#f4efdf!important;border-color:rgba(213,171,76,.25)!important}
+.auth-page .input-group i,.admin-login .input-group i{color:#cda54f!important}
+/* Admin login and admin panel */
+body.admin-theme,body.admin-login,body.plan-admin{background:#080808!important;color:#f4efdf!important}
+.admin-theme .admin-header{background:linear-gradient(135deg,#050505,#1b160c)!important;border-bottom:1px solid rgba(213,171,76,.32)!important}
+.admin-theme .admin-header h1{color:#f0d17a!important}
+.admin-theme .logout-btn{background:#211a0d!important;color:#f2d78d!important;border:1px solid rgba(213,171,76,.32)!important}
+.admin-theme .admin-nav{background:#0d0c0a!important;border-bottom:1px solid rgba(213,171,76,.25)!important;box-shadow:0 8px 20px rgba(0,0,0,.4)!important}
+.admin-theme .admin-nav button{background:#191711!important;color:#b8ad96!important;border:1px solid rgba(213,171,76,.14)!important}
+.admin-theme .admin-nav button.active{background:linear-gradient(135deg,#32250d,#17120a)!important;color:#f3d88d!important;border-color:rgba(213,171,76,.42)!important}
+.admin-theme .admin-content h2{color:#f2e7cd!important}
+.admin-theme .data-card{background:linear-gradient(145deg,#191611,#0c0c0b)!important;color:#f2ead8!important;border:1px solid rgba(213,171,76,.24)!important;box-shadow:0 12px 28px rgba(0,0,0,.4)!important}
+.admin-theme .data-card strong,.admin-theme .data-card h3{color:#f2e7ce!important}
+.admin-theme .data-card [style*="color:var(--muted)"]{color:#b5a98f!important}
+.admin-theme .form-control{background:#0e0e0d!important;color:#f4efdf!important;border-color:rgba(213,171,76,.25)!important}
+.admin-theme label{color:#e9ddc1!important}
+.admin-theme hr{border-color:rgba(213,171,76,.2)!important}
+.admin-theme .btn-gold{background:linear-gradient(135deg,#946b20,#d2a541 52%,#f2d98f)!important;color:#171107!important}
+.admin-theme .btn-success{background:#477c56!important}.admin-theme .btn-danger{background:#9c3942!important}
+.admin-theme .badge.pending{background:#493715!important;color:#f3d48b!important}
+.admin-theme .badge.approved{background:#173a28!important;color:#9ed3aa!important}
+.admin-theme .badge.rejected{background:#451b20!important;color:#f2a5a9!important}
+.admin-login .login-box{color:#f4efdf!important}
+.plan-admin .header{background:linear-gradient(135deg,#050505,#1b160c)!important;color:#f1d68a!important;border-bottom:1px solid rgba(213,171,76,.3)!important}
+.plan-admin .content,.plan-admin .card{background:transparent!important;color:#f4efdf!important}
+.plan-admin .card{background:linear-gradient(145deg,#191611,#0c0c0b)!important;border:1px solid rgba(213,171,76,.25)!important;border-radius:20px!important}
+.plan-admin h2,.plan-admin h3,.plan-admin label{color:#f1e5c8!important}
+.plan-admin input{background:#10100e!important;color:#f4efdf!important;border:1px solid rgba(213,171,76,.28)!important;border-radius:12px!important;padding:12px!important}
+.plan-admin .plan-btn{margin-top:12px}
+/* Smaller phones and accessibility */
+@media(max-width:360px){
+ .user-info h1{font-size:20px!important}.balance-box{padding:10px 13px!important}
+ .balance-box h3{font-size:22px!important}.tab-content{padding:16px!important}
+ .plan-card-premium{padding:20px!important}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}
+}
+
+.demo-disclaimer{font-size:11px;line-height:1.5;color:#c5b58f;text-align:center;margin:18px auto 0;max-width:340px;padding:10px 12px;border:1px solid rgba(213,171,76,.22);border-radius:12px;background:rgba(20,17,10,.72)}
+
+/* Inline-color safety overrides for generated cards */
+.premium-card [style*="color:var(--navy)"],
+.premium-card [style*="color: var(--navy)"],
+.premium-card h3{color:#f2e7cf!important}
+#investmentsList .premium-card button:disabled{background:#292315!important;color:#d0bd8d!important}
+#investmentsList [style*="background:#E2E8F0"]{background:#302a1e!important}
+.admin-theme [style*="color:var(--navy)"],
+.admin-theme [style*="color: var(--navy)"]{color:#f2e7cf!important}
+.admin-theme [style*="background:#fff"]{background:#17140e!important}
+
+
+/* ===== ORIGINAL ANIME ARTWORK LAYER ===== */
+.app-header{min-height:265px!important;isolation:isolate!important;background:#070707!important}
+.app-header::before{z-index:0!important;pointer-events:none!important}
+.app-header::after{
+  content:"";position:absolute;z-index:0;top:0;right:0;bottom:0;left:auto;width:68%;height:100%;
+  background-image:linear-gradient(90deg,#070707 0%,rgba(7,7,7,.42) 28%,rgba(7,7,7,.02) 68%),url("assets/hero-anime.jpg");
+  background-size:cover;background-position:center 22%;background-repeat:no-repeat;opacity:.94;
+  border-radius:0 0 38px 38px;animation:none!important;pointer-events:none
+}
+.app-header .header-top{position:relative;z-index:2;min-height:190px;align-items:flex-start}
+.app-header .user-info{max-width:66%;padding-top:8px}
+.app-header .user-info h1{font-size:clamp(20px,5vw,26px)!important;text-shadow:0 2px 12px #000}
+.app-header .balance-box{z-index:3;margin-top:4px;background:rgba(9,8,6,.72)!important;border-color:rgba(226,185,91,.48)!important}
+
+/* Active plan cards receive their own anime portrait strip. */
+#investmentsList .anime-plan-card{padding-left:142px!important;min-height:190px;background:linear-gradient(110deg,rgba(8,8,8,.10),#100e0b 36%,#0a0908)!important}
+#investmentsList .anime-plan-art{position:absolute;left:0;top:0;bottom:0;width:126px;overflow:hidden;border-radius:22px 0 0 22px;z-index:0;background:#100d09}
+#investmentsList .anime-plan-art::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,rgba(8,8,8,.78))}
+#investmentsList .anime-plan-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 28%;filter:saturate(.88) contrast(1.05)}
+#investmentsList .anime-plan-card>*:not(.anime-plan-art){position:relative;z-index:1}
+#investmentsList .anime-plan-card>div:first-of-type{gap:8px!important}
+#investmentsList .anime-plan-card strong{color:#f5e6c2!important}
+#investmentsList .anime-plan-card .badge-pill{box-shadow:0 0 0 1px rgba(218,178,88,.2)}
+
+/* Landing and login pages get a subtle character-led backdrop too. */
+.landing-container{isolation:isolate}
+.landing-container::after{content:"";position:absolute;z-index:0;top:80px;right:-18px;width:min(72vw,350px);height:430px;background:url("assets/hero-anime.jpg") center 20%/cover no-repeat;opacity:.24;mask-image:linear-gradient(180deg,#000 0%,#000 58%,transparent 100%);pointer-events:none}
+.hero-section{z-index:2}
+.auth-page .form-card{position:relative;overflow:hidden}
+.auth-page .form-card::after{content:"";position:absolute;right:-45px;top:-25px;width:155px;height:190px;background:url("assets/hero-anime.jpg") center 18%/cover no-repeat;opacity:.17;mask-image:linear-gradient(180deg,#000,transparent);pointer-events:none}
+
+/* Admin panel: artwork in the top bar, without covering controls. */
+.admin-theme .admin-header{position:relative;overflow:hidden;isolation:isolate}
+.admin-theme .admin-header::after{content:"";position:absolute;z-index:0;right:60px;top:-52px;width:155px;height:145px;background:url("../assets/hero-anime.jpg") center 18%/cover no-repeat;opacity:.42;mask-image:linear-gradient(90deg,transparent,#000 30%,#000);pointer-events:none}
+.admin-theme .admin-header>*{position:relative;z-index:1}
+@media(max-width:380px){
+ .app-header{min-height:245px!important}.app-header .header-top{min-height:175px}
+ #investmentsList .anime-plan-card{padding-left:116px!important}
+ #investmentsList .anime-plan-art{width:104px}
+}
